@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
+
   resources :pages
 
   # Resources :pages takes care of all the code written below with 1 line of code:
